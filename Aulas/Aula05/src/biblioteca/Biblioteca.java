@@ -32,7 +32,6 @@ public class Biblioteca {
         }
 
         System.out.println("Ta aqui: " + livro.getNome());
-        livro.setEstaEmprestado(true);
         usuario.getLivros().add(livro);
     }
 

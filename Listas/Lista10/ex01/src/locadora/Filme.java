@@ -16,9 +16,9 @@ public class Filme implements AudioVisual {
     
     @Override
     public void exibirInfor() {
-        System.out.println(titulo);
-        System.out.println(diretor);
-        System.out.println(atores);
+        System.out.println(this.titulo);
+        System.out.println(this.diretor);
+        System.out.println(this.atores);
     }
 
     public String getTitulo() {

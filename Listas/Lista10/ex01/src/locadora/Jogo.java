@@ -11,8 +11,8 @@ public class Jogo implements AudioVisual {
 
     @Override
     public void exibirInfor() {
-        System.out.println(titulo);
-        System.out.println(plataforma);
+        System.out.println(this.titulo);
+        System.out.println(this.plataforma);
     }
 
     public String getTitulo() {

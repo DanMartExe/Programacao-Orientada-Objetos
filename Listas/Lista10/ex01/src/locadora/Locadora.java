@@ -18,15 +18,12 @@ public class Locadora<T extends AudioVisual> {
         for (T item : acervo) {
             if (item instanceof Filme) {
                 Filme filme = (Filme) item;
-                System.out.println(filme.getTitulo());
-                System.out.println(filme.getDiretor());
-                System.out.println(filme.getAtores());
+                filme.exibirInfor();
             }
     
             if (item instanceof Jogo) {
                 Jogo jogo = (Jogo) item;
-                System.out.println(jogo.getTitulo());
-                System.out.println(jogo.getPlataforma());
+                jogo.exibirInfor();
             }
         }
     }
@@ -37,9 +34,7 @@ public class Locadora<T extends AudioVisual> {
                 Filme filme = (Filme) item;
                 if (filme.getTitulo().equals(titulo)) {
                     System.out.println("Item encontrado no acervo: ");
-                    System.out.println(filme.getTitulo());
-                    System.out.println(filme.getDiretor());
-                    System.out.println(filme.getAtores());
+                    filme.exibirInfor();
                 }
             }
     
@@ -47,8 +42,7 @@ public class Locadora<T extends AudioVisual> {
                 Jogo jogo = (Jogo) item;
                 if (jogo.getTitulo().equals(titulo)) {
                     System.out.println("Item encontrado no acervo: ");
-                    System.out.println(jogo.getTitulo());
-                    System.out.println(jogo.getPlataforma());
+                    jogo.exibirInfor();
                 }
             }
         }

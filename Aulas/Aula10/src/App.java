@@ -35,8 +35,8 @@ public class App {
         Caixa<Bombom> caixa3 = new Caixa<>(List.of(
             new Bombom("Sonho de Valsa"),
             new Bombom("Lollo"),
-            new Bombom("Batom"))
-        );
+            new Bombom("Batom")
+        ));
 
         //Collection:
         List<Bombom> bomboms = new ArrayList<>();
